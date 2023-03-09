@@ -5,7 +5,6 @@
     neo4j_backup_file_path: "{{ neo4j_restore_dir }}/{{ neo4j_backup_file_name }}"
 
 - name: download a file from azure storage
-  become: true
   include_role:
     name: azure-cloud-storage
     tasks_from: blob-download.yml
