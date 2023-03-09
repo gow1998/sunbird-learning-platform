@@ -30,7 +30,7 @@
     state: stopped
 
 - name: Copy rdb file to data dir
-  shell: cp /tmp/{{ redis_restore_file_name }} {{ learning_user_home }}/data/dump.rdb
+  shell: cp /tmp/{{ redis_restore_file_name }} /data/dump.rdb
 
 - name: start redis
   become: yes
