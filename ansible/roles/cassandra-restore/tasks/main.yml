@@ -6,7 +6,6 @@
     cassandra_restore_gzip_file_path: "{{ restore_path }}/{{ cassandra_restore_file_name }}"
 
 - name: download a file from azure storage
-  become: true
   include_role:
     name: azure-cloud-storage
     tasks_from: blob-download.yml
